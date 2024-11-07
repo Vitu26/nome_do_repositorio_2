@@ -1,0 +1,35 @@
+<Profile Name="UserDefine">
+	<Endpoint Name="Speakers" DataFlow="Out">
+		<ApoEffect Name="SpeakerSetting">
+			<Property Name="DefaultDeviceControl" Value="1" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+		</ApoEffect>
+		<ApoEffect Name="SpeakerVirtual">
+		 	 <Property Name="Enable_SS_LFX" Value="1" UIName="" ValueType="" Args="" ArgsType="" />
+    			 <Property Name="SS_LF_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+    			 <Property Name="SS_RF_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+    			 <Property Name="SS_LB_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+    			 <Property Name="SS_RB_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+    			 <Property Name="SS_LS_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+    		 	 <Property Name="SS_RS_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+    			 <Property Name="SS_C_DIST" Value="26" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+   			 <Property Name="SS_LFE_DIST" Value="24" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+ 			 <Property Name="Enable_Channel_COPY_LFX" Value="1" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+		</ApoEffect>
+	</Endpoint>
+
+	<Endpoint Name="Mic" DataFlow="In">
+		<ApoEffect Name="MicInVolume">
+			<Property Name="DefaultDeviceControl" Value="1" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>	
+			<Property Name="AGCControl" Value="0" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+			<Property Name="BoostControl" Value="0" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>		
+		</ApoEffect>
+	</Endpoint>
+
+	<Endpoint Name="DesktopMic" DataFlow="In">
+		<ApoEffect Name="DesktopMicSamplingRate">
+			<Property Name="DefaultDeviceControl" Value="1" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+			<Property Name="AGCControl" Value="1" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+			<Property Name="BoostControl" Value="1" UIName="" ValueType="System.UInt32" Args="1" ArgsType="System.UInt32"/>
+		</ApoEffect>		
+	</Endpoint>
+</Profile>
